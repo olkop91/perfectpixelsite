@@ -1,0 +1,142 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif; */
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+:root {
+    --accent-color: #F7654A;
+    --dark-color: #404149;
+    --grey-color: #999999;
+    --white-color: #FFFFFF;
+    --bacground-color: #E5E5E5;
+}
+
+.text-h2 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+}
+
+.text-h3 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.text-h4 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    letter-spacing: 0.02em;
+}
+
+.text-p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.text-p-revews {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.header {
+    min-height: 740px;
+    background-image: url(../img/first-screen-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heder__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 20px;
+    margin-bottom: 112px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.burger {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 0;
+    background-color: var(--accent-color);
+    bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger__line {
+    display: block;
+    width: 21px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+.burger__line:last-child {
+    margin-bottom: 0px;
+}
+
+.main__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    max-width: 734px;
+    margin: 0 auto 17px;
+}
+
+.main__desc {
+    font-family: 'Oswald';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin: 0 auto;
+}
