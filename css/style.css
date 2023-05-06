@@ -4,7 +4,11 @@ font-family: 'Oswald', sans-serif; */
     box-sizing: border-box;
 }
 
-*, *:before, *:after{ box-sizing: border-box; }
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
@@ -12,10 +16,12 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
 }
-img{
+
+img {
     display: block;
     max-width: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -213,16 +219,19 @@ p {
     line-height: 27px;
     text-align: center;
 }
-@media screen and (max-width:1280px){
+
+@media screen and (max-width:1280px) {
     .about__grid {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
 }
-@media screen and (max-width:768px){
-    .info{
+
+@media screen and (max-width:768px) {
+    .info {
         position: relative;
     }
+
     .about__grid {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 1fr);
@@ -233,20 +242,23 @@ p {
     text-align: center;
     margin-bottom: 50px;
 }
+
 .about__grid-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     justify-items: center
 }
-.projecr-img{
+
+.projecr-img {
     margin-bottom: 45px;
 }
+
 .rectangle {
     width: 55px;
-    height: 6px; 
+    height: 6px;
     background: var(--accent-color);
-    margin-bottom: 15px;  
+    margin-bottom: 15px;
 }
 
 .project-h3 {
@@ -258,6 +270,7 @@ p {
     margin-bottom: 12px;
     color: var(--dark-color);
 }
+
 .project-p {
     font-family: 'Open Sans';
     font-style: normal;
@@ -266,19 +279,165 @@ p {
     line-height: 22px;
     color: var(--grey-color);
 }
-@media screen and (max-width:1280px){
-    .about{
+
+@media screen and (max-width:1280px) {
+    .about {
         padding: 450px 15px 150px 15px;
     }
+
     .about__grid-2 {
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
     }
 }
-@media screen and (max-width:768px){
+
+@media screen and (max-width:768px) {
     .about__grid-2 {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-    
+
+}
+
+.request {
+    background-color: var(--accent-color);
+    padding-top: 30px;
+    padding-bottom: 41px;
+}
+
+.request__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.request__flex-left {}
+
+.request__h4 {
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 5px;
+}
+
+.request__h5 {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
+    text-transform: uppercase;
+
+}
+
+.request__flex-right {}
+
+.request__btn {
+    margin-top: 25px;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-family: 'Oswald';
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    padding: 14px 30px;
+}
+
+.request__icon {
+    margin-right: 15px;
+}
+
+@media screen and (max-width:1280px) {
+    .request {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .request__flex {
+        flex-wrap: wrap;
+    }
+}
+
+.servieces {
+    padding: 150px 0;
+}
+
+.section__h2,
+.services__h4 {
+    color: black;
+}
+
+.section__h2 {
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.services__h4 {
+    margin: 0 auto;
+    margin-bottom: 0px;
+    text-align: center;
+    max-width: 172px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+.services__grid-item {
+    padding: 59px 0;
+    background-color: #f7f7f7;
+    width: 350px;
+}
+
+.services__icon {
+    margin: 0 auto 25px;
+}
+@media screen and (max-width:1280px) {
+    .servieces{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .services__grid{
+        grid-template-columns: repeat(2, 3fr);
+        grid-template-rows: repeat(3, 2fr);
+    }
+    .services__grid-item{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .services__grid{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
 }
